@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Loja de Games</title>
+    <link rel="stylesheet" href="./main.css">
+
+<!-- Fontes do site Fontsgoogle, escolher e copior tudo jogando os detalhes  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">                         
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>                            <!-- Cabeçalho -->
+        <div class="conteiner">             <!-- Criado para deixar Organizado -->
+            <h1>Games Shop Jhony</h1>
+            <nav>                           <!-- Criar Menus -->
+                <ul>                        <!-- Deixa não ordenado, com pontinhos -->
+                    <li>
+                        <a href="#sobre" title="Sobre a loja">Sobre a Loja</a>
+                    </li>
+                    <li>
+                        <a href="#contatos" title="Contado">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sobre">                           <!-- Criar uma secção e o id ajuda o link a achar -->
+        <div class="conteiner">             <!-- Organizar -->
+            <img class="imagem_faixada" src="./Material de Apoio/images/loja.jpg" alt="Faixada da loja Games Shop Jhony" />
+            <div>                                                                                           <!-- Deixar separado da imagem os textos -->
+                <h2>Sobre nós</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe odit fuga eius, quia esse, sit quas asperiores aperiam officia laborum omnis atque molestias in aliquam voluptatem pariatur hic quisquam vero.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque ipsum sunt adipisci temporibus. Ducimus, asperiores? Reiciendis, eveniet eligendi officiis suscipit nobis fugiat ratione quasi dolorum, veritatis animi quae accusamus!
+                </p>
+                <ul class="lista_de_marcas">
+                    <li><img src="./Material de Apoio/images/nintendo.png" alt="Logo da Nintendo"></li>
+                    <li><img src="./Material de Apoio/images/playstation.png" alt="Logo da Playstation"></li>
+                    <li><img src="./Material de Apoio/images/xbox.png" alt="Logo da Xbox"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contatos">                       <!-- Criado uma outra Secção para separar -->
+        <div class="conteiner">        <!-- Organizar -->
+            <h2>Contato</h2>              
+            <div class="interacao">                   <!-- Separar as divs para melhor visualização -->
+                <div>               <!-- Criado uma Sub-sessão -->
+                    <h3>Fale Conosco</h3>
+                    <form>              <!-- Formularios -->
+                        <input type="text" placeholder="Seu Nome" required/>        <!-- Adicionar required se torna obrigatorio o uso -->
+                        <input type="email" placeholder="Seu melhor E-mail" required/>
+                        <input type="tel" placeholder="Seu Telefone"/>
+                        <textarea placeholder="Sua Mensagem" required></textarea>                <!-- Abrir uma área para escrever-->
+                        <button type="submit">Enviar</button>                   <!-- Criado um botão para enviar -->
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos Acompanhe</h3>
+                    <ul class="imagens_social">                            <!-- Lista não numerada para ter os links -->
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">         <!-- Criado o espaço para Seguir no Instagram -->
+                                <img src="./Material de Apoio/images/instagram.png" alt="Logo Instagram" />     <!-- Logo Instagram -->
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">         <!-- Criado o espaço para Seguir no Facebook -->
+                                <img src="./Material de Apoio/images/facebook.png" alt="Logo Facebook" />     <!-- Logo Facebook -->
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no YouTube">         <!-- Criado o espaço para Seguir no YouTube -->
+                                <img src="./Material de Apoio/images/youtube.png" alt="Logo Instagram" />     <!-- Logo YouTube -->
+                            </a>    
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p> 
+                        Rua Lorem ipsum dolor sit amet consectetur
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer>                <!-- Criado o rodapé -->
+        <div class="conteiner">
+            <p>
+                &copy;Games Shop Jhony - Todos os direitos reservado, 2024          <!-- Criado o Copywriter -->
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

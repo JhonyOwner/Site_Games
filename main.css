@@ -1,0 +1,174 @@
+* {
+    margin: 0;              /* Distancia total */
+    padding: 0;             /* Seta a distância de cima / direita / baixo / esquerda */
+    box-sizing: border-box;
+}
+
+header h1,                  /* Mudar a fonte tanto em header quanto section */
+section h2,
+section h3,
+form button {
+    font-family: "Bungee", cursive;
+    font-weight: normal;        /* Coloca a font do texto principal como Normal, sem ser bold etc */
+}
+
+body,
+input,
+textarea {  	                /* Setou a fonte para toda a pagina */ 
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+header nav li {
+    display: inline;                /* Colocar um ao lado do outro Menus */
+    margin: 16px;                   /* Distancia entre eles */
+    font-size: 16px;                /* Tamanho da fonte do menu */
+}
+
+header nav li a {               /* a Por conta de ser linkada */ 
+    color: #ffffff;
+    text-decoration: none;          /* Remover o _ dos links */
+}
+
+header nav li a:hover {             /* Setar uma ação quando o mouse para em cima */
+    text-decoration: underline;          /* Colocar o _ */
+    color: #8a2be2;                     /* Mudar a cor quando selecionado */
+}
+
+.conteiner {                     /* Nunca esquecer de colocar o . antes */
+    max-width: 1200px;             /* Largura MAXIMA */
+    width: 100%;                    /* Usar até o 100% da tela */
+    margin: 0 auto;
+}
+
+header .conteiner,                  /* Aproveita tanto para o header quando para section */
+section .conteiner {            
+    display: flex;              /* Colocar ao lado */ 
+    align-items: center;        /* Alinhar na vertical */
+    justify-content: space-between;     /* Distribuir o menu para extrema direita e manter o Titulo no Lugar */
+}
+
+.lista_de_marcas img {          /* Setar o tamanho da imagem */
+    height: 36px;
+}
+
+.lista_de_marcas li {           /* Seta um ao lado do outro as imagens das marcas */
+    display: inline;
+    margin-right: 8px;          /* Distancia entre elas */
+}
+
+.imagem_faixada {           
+    margin-right: 32px;         /* Seta somente margem para a imagem de faixada */ 
+}
+
+section .conteiner {
+    align-items: self-start;            /* Sobrepós a anterior, colocando o texto agora para ↑ */
+}
+
+section {
+    padding: 24px 0;          /* 24px para ↑ e ↓ e 0 para → e ← */
+    color: #191970;         /* Muda a cor dos textos dos menusS */ 
+}
+
+section h2 {
+    margin-bottom: 0px;            /* Margem de baixo */ 
+    color: #0000ff;              /* Seta a cor do H2 ( Sub Títulos ) */
+}
+
+section p {
+    margin-bottom: 10px;         /* Margem Textos */
+    cursor: pointer;
+}  
+
+.imagens_social img {
+    height: 36px;               /* Tamanho da imagem Social */
+}
+
+.imagens_social li {
+    display: inline;        /* Deixar um ao lado do outro */
+    margin-right: 8px;      /* Distancia → */
+}
+
+.imagens_social li a {
+    text-decoration: none;      /* Remover a sujeirinha que tem ao lado das imagens */
+}
+
+#contatos .conteiner {
+    display: block;
+}
+
+.interacao {
+    display: flex;
+    justify-content: space-between;         /* Espaçamento entre */
+}   
+
+form input,
+form textarea {
+    display: block;             /* Utilizando display: block;  o campo não permite que mais nada seja adicionado, se torna algo rígido */
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 4px;                  /* Espacamento interno */
+}
+
+form textarea {                    /* Remover o redimencionamento do texto */ 
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background-color: #0000ff;
+    color: white;
+    display: block;             /* Utilizando display: block;  o campo não permite que mais nada seja adicionado, se torna algo rígido */
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 0%;                  /* Espacamento interno */
+    border: none;                   /* Sem Bordas */
+    cursor: pointer;                       /* Mudar o cursor do mouse */
+}
+
+form button:hover {
+    background-color: black;
+}
+
+/* input:focus, textarea:focus {           /* Quando o campo está em foco 
+    outline-color: ...
+} 
+
+/* Define a animação para o ciclo de espectro */
+@keyframes ciclo_de_cores {
+    0% { outline-color: red; }
+    14% { outline-color: orange; }
+    28% { outline-color: yellow; }
+    42% { outline-color: green; }
+    57% { outline-color: blue; }
+    71% { outline-color: indigo; }
+    85% { outline-color: violet; }
+    100% { outline-color: red; }
+}
+
+/* Estilos para o input */
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    outline: none; /* Remova o outline padrão */
+}
+
+/* Aplica a animação no foco */
+input:focus, textarea:focus {
+    outline: 1px solid;
+    border:none;
+    animation: ciclo_de_cores 2s linear infinite;
+}
+
+footer {
+background-color: #0000ff;
+color: #ffffff;
+padding: 10px 0;
+font-size: smaller;
+}
